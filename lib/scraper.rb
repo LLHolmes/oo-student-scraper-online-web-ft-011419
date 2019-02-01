@@ -27,7 +27,7 @@ class Scraper
     # github = "https://github.com" // "https://www.github.com"
     # blog = "https://twitter.com"
     quote = doc.css('.profile-quote').text
-    # bio = 
+    # bio = doc.css('.bio-content .description-holder').text
     binding.pry
     
     
