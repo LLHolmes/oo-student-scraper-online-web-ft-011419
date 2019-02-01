@@ -24,6 +24,7 @@ class Scraper
     twitter = "https://twitter.com"
     
     
+    
   end
 
 end
