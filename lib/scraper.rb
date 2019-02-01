@@ -25,6 +25,8 @@ class Scraper
     linkedin = "https://www.linkedin.com" // "https://www.linkedin.com"
     github = "https://github.com" // "https://www.github.com"
     blog = "https://twitter.com"
+    profile_quote = 
+    bio = 
     
     
     
