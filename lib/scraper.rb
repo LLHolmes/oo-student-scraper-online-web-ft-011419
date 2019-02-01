@@ -27,8 +27,9 @@ class Scraper
     social_media = doc.css('.social-icon-container').css('a')
     social_media.each do |icon|
       if icon.attr('href')[8..17]
-        github.com
-        twitter.co
+        github.com || www.github
+        twitter.co || www.twitte
+        linkedin.c || www.linked
     doc.css('.social-icon-container').css('a')[0].attr('href')
     # twitter = "https://twitter.com"
     # linkedin = "https://www.linkedin.com" // "https://www.linkedin.com"
