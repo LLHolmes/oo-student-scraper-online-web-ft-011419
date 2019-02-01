@@ -5,6 +5,7 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
+    puts "hi"
     all_students = []
     doc = Nokogiri::HTML(open(index_url))
     student_elements = doc.css('.student-card')
@@ -34,5 +35,5 @@ class Scraper
 
 end
 
-# Scraper.scrape_index_page("./fixtures/student-site/index.html")
-Scraper.scrape_profile_page("./fixtures/student-site/students/jenny-yamada.html")
+Scraper.scrape_index_page("./fixtures/student-site/index.html")
+# Scraper.scrape_profile_page("./fixtures/student-site/students/jenny-yamada.html")
