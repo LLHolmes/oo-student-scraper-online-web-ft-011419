@@ -21,7 +21,7 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     profile_hash = {}
-    doc = Nokogiri::HTML(open("./fixtures/student-site/" + profile_url))
+    doc = Nokogiri::HTML(open(profile_url))
     profile_hash[:bio] = doc.css('.bio-content .description-holder').text
     profile_hash[:profile_quote] = doc.css('.profile-quote').text
     social_media = doc.css('.social-icon-container').css('a')
@@ -42,4 +42,5 @@ class Scraper
 end
 
 # Scraper.scrape_index_page("./fixtures/student-site/index.html")
-Scraper.scrape_profile_page("students/jenny-yamada.html")
+# Scraper.scrape_profile_page("students/jenny-yamada.html")
+# "./fixtures/student-site/" + 
