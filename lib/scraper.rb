@@ -11,7 +11,7 @@ class Scraper
     student_elements.each do |student|
       student[:name] = student.css('.student-name').text
       student[:location] = student.css('.student-location').text
-      # student[:profile_url] = 
+      # student[:profile_url] = student.css('a').attr('href').text
     binding.pry
     #[{:name => "" :location => "", :profile_url => ""}, {}, {}]
     end
