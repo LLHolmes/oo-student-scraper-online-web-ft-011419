@@ -30,15 +30,13 @@ class Scraper
         profile_hash[:twitter] = icon.attr('href')
       elsif icon.attr('href').include?("linkedin.com")
         profile_hash[:linkedin] = icon.attr('href')
-        
-    doc.css('.social-icon-container').css('a')[0].attr('href')
-    # twitter = "https://twitter.com"
-    # linkedin = "https://www.linkedin.com" // "https://www.linkedin.com"
-    # github = "https://github.com" // "https://www.github.com"
-    # blog = "https://twitter.com"
-    binding.pry
-    
-    
+      elsif icon.attr('href').include?("github.com")
+        profile_hash[:github] = icon.attr('href')
+      else 
+        profile_hash[:blog] = icon.attr('href')
+      end
+    end
+    profile_hash
   end
 
 end
