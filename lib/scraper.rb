@@ -26,7 +26,7 @@ class Scraper
     profile_hash[:profile_quote] = doc.css('.profile-quote').text
     social_media = doc.css('.social-icon-container').css('a')
     social_media.each do |icon|
-      if icon.attr('href')[8..17]
+      if icon.attr('href').include?([8..17]
         github.com || www.github
         twitter.co || www.twitte
         linkedin.c || www.linked
