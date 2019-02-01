@@ -20,7 +20,8 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open("./fixtures/student-site/index.html" + profile_url))
-    twitter = doc.css('.social-icon-container')
+    social_media = doc.css('.social-icon-container')
+    twitter = 
     
     
   end
