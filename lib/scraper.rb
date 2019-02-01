@@ -28,6 +28,8 @@ class Scraper
     social_media.each do |icon|
       if icon.attr('href').include?("twitter.com")
         profile_hash[:twitter] = icon.attr('href')
+      elsif icon.attr('href').include?("linkedin.com")
+        profile_hash[:twitter] = icon.attr('href')
         
     doc.css('.social-icon-container').css('a')[0].attr('href')
     # twitter = "https://twitter.com"
