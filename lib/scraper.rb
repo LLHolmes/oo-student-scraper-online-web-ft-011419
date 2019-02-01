@@ -14,7 +14,7 @@ class Scraper
       student_hash[:location] = student.css('.student-location').text
       student_hash[:profile_url] = student.css('a').attr('href').text
       all_students << student_hash
-    binding.pry
+    # binding.pry
     #[{:name => "" :location => "", :profile_url => ""}, {}, {}]
     end
   end
@@ -25,4 +25,4 @@ class Scraper
 
 end
 
-Scraper.scrape_index_page("./fixtures/student-site/index.html")
+# Scraper.scrape_index_page("./fixtures/student-site/index.html")
