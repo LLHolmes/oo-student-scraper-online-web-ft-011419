@@ -35,4 +35,4 @@ class Scraper
 end
 
 # Scraper.scrape_index_page("./fixtures/student-site/index.html")
-Scraper.scrape_profile_page("./fixtures/student-site/students/adrian-prieto.html")
+Scraper.scrape_profile_page("./fixtures/student-site/students/jenny-yamada.html")
