@@ -10,9 +10,10 @@ class Scraper
     student_elements = doc.css('.student-card')
     student_elements.each do |student|
       student_hash = {}
-      student[:name] = student.css('.student-name').text
-      student[:location] = student.css('.student-location').text
-      student[:profile_url] = student.css('a').attr('href').text
+      student_hash[:name] = student.css('.student-name').text
+      student_hash[:location] = student.css('.student-location').text
+      student_hash[:profile_url] = student.css('a').attr('href').text
+      all_students << student_hash
     binding.pry
     #[{:name => "" :location => "", :profile_url => ""}, {}, {}]
     end
