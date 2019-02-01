@@ -23,7 +23,7 @@ class Scraper
     social_media = doc.css('.social-icon-container')
     twitter = "https://twitter.com"
     linkedin = "https://www.linkedin.com"
-    github = "https://twitter.com"
+    github = "https://github.com"
     blog = "https://twitter.com"
     
     
