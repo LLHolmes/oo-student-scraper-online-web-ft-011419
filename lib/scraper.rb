@@ -21,7 +21,7 @@ class Scraper
 
   def self.scrape_profile_page(profile_url)
     doc = Nokogiri::HTML(open("./fixtures/student-site/" + profile_url))
-    sm = doc.css('.social-icon-container')
+    sm = doc.css('.social-icon-container').css('a')
     # twitter = "https://twitter.com"
     # linkedin = "https://www.linkedin.com" // "https://www.linkedin.com"
     # github = "https://github.com" // "https://www.github.com"
