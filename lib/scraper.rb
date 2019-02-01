@@ -14,6 +14,7 @@ class Scraper
       # student[:profile_url] = 
     binding.pry
     #[{:name => "" :location => "", :profile_url => ""}, {}, {}]
+    end
   end
 
   def self.scrape_profile_page(profile_url)
